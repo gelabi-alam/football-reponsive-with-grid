@@ -10,14 +10,14 @@ a{
     color: #fff;
 }
 #container{
-    box-sizing: border-box;
+    max-width: 100%;
 }
 header{
     background-color: #2D25A0;
     color: #fff;
 }
 .top{
-    width: 1120px;
+    max-width: 85%;
     margin: 0 auto;
 }
 .top nav{
@@ -35,9 +35,10 @@ nav a{
 banner section
 ----------------- */
 .banner{
-    display: flex;
-    justify-content: space-evenly;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     align-items: center;
+    justify-content: center;
     height: 500px;
 }
 .half-width h1{
@@ -50,23 +51,23 @@ banner section
     border-radius: 2px;
 }
 .half-width img{
-   width: 400px; 
-   height: 300px;
+   width: 420px; 
+   height: 320px;
+   border-radius: 5px;
 }
 /*---------------
 main content 
 ----------------*/
 #content-area{
-    max-width: 1120px;
+    max-width: 80%;
     margin: 40px auto;
 }
 .contents{
- display: flex;  
- justify-content: space-evenly;
- align-items: center;
+ display: grid; 
+ grid-template-columns: repeat(3, 1fr);
 }
 .content{
-    box-shadow: 5px 6px 8px #EFEFEF;
+    box-shadow: 10px 10px 40px rgb(177, 174, 174);
     border-radius: 5px;
     border: none;
     text-align: justify;
@@ -76,7 +77,7 @@ main content
     padding: 12px;
 }
 .content img{
-    margin: 0 auto;
+
 }
 highlights h1{
     font-size: 2em;
